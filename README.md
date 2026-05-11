@@ -9,7 +9,8 @@ A. Model Performance
 💬Answer: Based on the training summary, MobileNetv2 achieved the highest accuracy among the three models tested with a final val accuracy of 84.87%. The reason is that because of the configuration error in how the two models were set up in my initial codes. <br>
 2. Which model had the lowest performance? What could be the reason? <br>
 💬Answer: Based on the training result, EfficientNetBO had the lowest performance with the final val accuracy of 4.09%. Most likely the reason is preprocessing mismatch and training time since these models are significantly deeper and more complex, a short 10 epochs training run and these larger models requires more time and higher learning rate. <br>
-3. How did loss values compare across models?
+3. How did loss values compare across models? <br>
+💬Answer: Based on the training summary, there was a massive difference in loss values between the models. Lower loss value indicates that the model's predictions are closer to the actual labels. The "Logits" factor was very helpful since it is a good practice for numerical stability but it also means the "raw" loss values might look slightly differen. RESUME HERE....
 
 B. Evaluation Metrics
 --
