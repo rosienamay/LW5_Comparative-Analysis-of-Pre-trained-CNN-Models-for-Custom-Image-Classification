@@ -5,8 +5,10 @@
 --
 A. Model Performance
 --
-1. Which pre-trained model achieved the highest accuracy? Why?
-2. Which model had the lowest performance? What could be the reason?
+1. Which pre-trained model achieved the highest accuracy? Why? <br>
+💬Answer: Based on the training summary, MobileNetv2 achieved the highest accuracy among the three models tested with a final val accuracy of 84.87%. The reason is that because of the configuration error in how the two models were set up in my initial codes. <br>
+2. Which model had the lowest performance? What could be the reason? <br>
+💬Answer: Based on the training result, EfficientNetBO had the lowest performance with the final val accuracy of 4.09%. Most likely the reason is preprocessing mismatch and training time since these models are significantly deeper and more complex, a short 10 epochs training run and these larger models requires more time and higher learning rate. <br>
 3. How did loss values compare across models?
 
 B. Evaluation Metrics
